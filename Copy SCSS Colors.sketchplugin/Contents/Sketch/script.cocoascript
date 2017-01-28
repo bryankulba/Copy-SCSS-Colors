@@ -26,7 +26,7 @@ var onRun = function(context) {
 
 
 	//returns background color as scss varable delaration:
-	// $c-["layer name"]: #["hex"];
+	// $color-["layer name"]: #["hex"];
 	// ( eg. $c-red: #ff0000; )
 	var getBackground = function getBackground(layer){
 		
@@ -36,7 +36,7 @@ var onRun = function(context) {
 			var name = layer.name().toLowerCase().replace(" ", "-");
 
 			log(color);
-			return "\n$c-" + name + ": #" + color + ";";
+			return "\n$color-" + name + ": #" + color + ";";
 
 		}	else {
 			return "";
